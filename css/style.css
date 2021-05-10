@@ -13,7 +13,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 10px;
+  width: 12px;
 }
 
 body::-webkit-scrollbar-track {
@@ -28,6 +28,29 @@ body::-webkit-scrollbar-thumb {
 .container {
   display: grid;
   grid-template: auto auto auto auto auto / auto;
+}
+
+/*--------------------------------------------------Button-Top--------------------------------------------------*/
+.button-top {
+  right: 7px;
+  bottom: 15px;
+  display: block;
+  position: fixed;
+  text-decoration: none;
+}
+
+.button-top-box {
+  width: 40px;
+  height: 40px;
+  background-color: #bc6c25;
+  box-shadow: 1px 1px 10px #333533aa;
+}
+
+.button-top-box p {
+  padding: 5px;
+  font-size: 30px;
+  color: #283618;
+  transform: rotate(90deg);
 }
 
 /*--------------------------------------------------Header--------------------------------------------------*/

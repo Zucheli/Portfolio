@@ -14,7 +14,7 @@ body {
 /*------------------------------Header------------------------------*/
 header {
   width: 100%;
-  height: 50px;
+  height: 100px;
   display: grid;
   align-items: center;
   background-color: #242423;
@@ -25,7 +25,7 @@ header {
 header ul {
   float: right;
   display: flex;
-  font-size: 12px;
+  font-size: 14px;
   list-style: none;
 }
 
@@ -48,7 +48,7 @@ header a:hover {
 }
 
 .profile .line {
-  width: 100%;
+  width: 99%;
   height: 1px;
   margin-top: 9px;
   color: #242423;
@@ -89,7 +89,7 @@ header a:hover {
 }
 
 .projects .line {
-  width: 100%;
+  width: 99%;
   height: 1px;
   margin-top: 9px;
   color: #242423;
@@ -137,7 +137,7 @@ header a:hover {
 }
 
 .contact .line {
-  width: 100%;
+  width: 99%;
   height: 1px;
   margin-top: 9px;
   color: #242423;
@@ -151,7 +151,7 @@ header a:hover {
   padding-left: 10px;
 }
 
-.contact-content .social{
+.contact-content .social {
   padding: 20px;
   display: grid;
   justify-content: space-around;
@@ -160,7 +160,7 @@ header a:hover {
 
 .square {
   width: 80px;
-  height: 80px; 
+  height: 80px;
   display: flex;
   font-size: 10px;
   border-radius: 3px;
@@ -170,6 +170,10 @@ header a:hover {
 }
 
 .linkedin {
+  text-align: center;
+}
+
+.github {
   text-align: center;
 }
 
@@ -216,3 +220,347 @@ footer p {
   color: #e8eddf;
 }
 
+/*------------------------------Responsiveness------------------------------*/
+@media screen and (min-width: 480px) {
+  body {
+    border: 4px solid #242423;
+  }
+
+  /*------------------------------Header------------------------------*/
+  header ul {
+    font-size: 18px;
+  }
+
+  /*------------------------------Profile------------------------------*/
+  .profile-content {
+    display: grid;
+    padding: 20px;
+    justify-content: space-around;
+    grid-template: auto / auto auto;
+  }
+
+  .profile-content img {
+    width: 150px;
+  }
+
+  .profile-content p {
+    font-size: 14px;
+  }
+
+  /*------------------------------Projects------------------------------*/
+  .project {
+    height: 200px;
+  }
+
+  .project img {
+    width: 130px;
+  }
+
+  .project p {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  /*------------------------------Contact------------------------------*/
+  .contact {
+    padding-top: 30px;
+  }
+
+  .square {
+    width: 100px;
+    height: 100px;
+    font-size: 12px;
+  }
+
+  .contact-content .email {
+    width: 300px;
+    font-size: 12px;
+  }
+
+  .email a {
+    justify-content: center;
+  }
+
+  .email a img {
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  body {
+    border: 5px solid #242423;
+  }
+
+  /*------------------------------Header------------------------------*/
+  header ul {
+    font-size: 20px;
+  }
+
+  header li {
+    padding: 0px 10px;
+  }
+
+  /*------------------------------Profile------------------------------*/
+  .profile-content img {
+    width: 200px;
+  }
+
+  .profile-content p {
+    width: 300px;
+    font-size: 18px;
+  }
+
+  /*------------------------------Projects------------------------------*/
+  .project {
+    height: 300px;
+  }
+
+  .project img {
+    width: 200px;
+  }
+
+  .project p {
+    width: 200px;
+    font-size: 18px;
+  }
+
+  /*------------------------------Contact------------------------------*/
+  .square {
+    width: 150px;
+    height: 150px;
+    font-size: 18px;
+  }
+
+  .linkedin img {
+    width: 40px;
+  }
+
+  .github img {
+    width: 45px;
+  }
+
+  .contact-content .email {
+    width: 450px;
+    height: 70px;
+    font-size: 18px;
+  }
+
+  .email a {
+    padding: 20px;
+  }
+
+  .email a img {
+    width: 40px;
+    padding-right: 20px;
+  }
+
+  /*------------------------------Footer------------------------------*/
+  footer {
+    height: 70px;
+  }
+
+  footer img {
+    width: 100px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    border: 5px solid #242423;
+  }
+
+  /*------------------------------Header------------------------------*/
+  header img {
+    width: 130px;
+  }
+
+  header ul {
+    font-size: 24px;
+  }
+
+  header li {
+    padding: 0px 20px;
+  }
+
+  /*------------------------------Profile------------------------------*/
+  .profile .line {
+    margin-top: 19px;
+    border-top: 6px solid #242423;
+  }
+
+  .profile .title h1 {
+    font-size: 60px;
+  }
+
+  .profile-content img {
+    width: 250px;
+  }
+
+  .profile-content p {
+    width: 400px;
+    font-size: 22px;
+  }
+
+  /*------------------------------Projects------------------------------*/
+  .projects .line {
+    margin-top: 19px;
+    border-top: 6px solid #242423;
+  }
+
+  .projects .title h1 {
+    font-size: 60px;
+  }
+
+  .project {
+    height: 300px;
+  }
+
+  .project img {
+    width: 200px;
+  }
+
+  .project p {
+    width: 400px;
+    font-size: 20px;
+  }
+
+  /*------------------------------Contact------------------------------*/
+  .contact .line {
+    margin-top: 19px;
+    border-top: 6px solid #242423;
+  }
+
+  .contact .title h1 {
+    font-size: 60px;
+  }
+
+  .square {
+    width: 200px;
+    height: 200px;
+    font-size: 25px;
+  }
+
+  .linkedin img {
+    width: 60px;
+  }
+
+  .github img {
+    width: 65px;
+  }
+
+  .contact-content .email {
+    width: 600px;
+    height: 100px;
+    font-size: 25px;
+  }
+
+  .email a {
+    padding: 30px;
+  }
+
+  .email a img {
+    width: 55px;
+  }
+
+  /*------------------------------Footer------------------------------*/
+  footer {
+    margin-top: 50px;
+    height: 100px;
+  }
+
+  footer img {
+    width: 120px;
+  }
+
+  footer p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    border: 7px solid #242423;
+  }
+
+  /*------------------------------Header------------------------------*/
+  header {
+    height: 120px;
+  }
+
+  header img {
+    width: 150px;
+  }
+
+  /*------------------------------Profile------------------------------*/
+  .profile .line {
+    margin-top: 22px;
+    border-top: 7px solid #242423;
+  }
+
+  .profile .title h1 {
+    font-size: 70px;
+    padding-left: 50px;
+  }
+
+  .profile-content img {
+    width: 300px;
+  }
+
+  .profile-content p {
+    width: 500px;
+    font-size: 28px;
+  }
+
+  /*------------------------------Projects------------------------------*/
+  .projects .line {
+    margin-top: 22px;
+    border-top: 7px solid #242423;
+  }
+
+  .projects .title h1 {
+    font-size: 70px;
+    padding-left: 50px;
+  }
+
+  .projects-content {
+    display: grid;
+    grid-template: auto auto auto auto / auto auto;
+  }
+
+  .projects-content .border {
+    border-top: 2px solid #242423;
+  }
+
+  .project {
+    height: 500px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template: auto auto / auto;
+    border-right: 2px solid #242423;
+    border-bottom: 2px solid #242423;
+  }
+
+  .project img {
+    width: 220px;
+  }
+
+  .project p {
+    font-size: 22px;
+  }
+
+  /*------------------------------Contact------------------------------*/
+  .contact .line {
+    margin-top: 22px;
+    border-top: 7px solid #242423;
+  }
+
+  .contact .title h1 {
+    font-size: 70px;
+    padding-left: 50px;
+  }
+}
